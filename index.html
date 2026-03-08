@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ROYALHOKI77 | Platform Hiburan Online</title>
-
-<meta name="description" content="RoyalHoki77 platform hiburan online dengan sistem stabil dan komunitas aktif.">
+<title>RoyalHoki77 | Platform Hiburan Online Terbesar SeASIA</title>
+<meta name="description" content="RoyalHoki77 platform hiburan online dengan komunitas aktif dan sistem stabil.">
 
 <style>
 
@@ -15,49 +13,55 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-font-family:Arial, Helvetica, sans-serif;
 background:#000;
 color:#fff;
-text-align:center;
+line-height:1.6;
 }
 
 header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+border-bottom:1px solid #222;
 background:#000;
-border-bottom:2px solid gold;
-padding:20px;
+position:sticky;
+top:0;
 }
 
 .logo{
-font-size:38px;
+font-size:28px;
 font-weight:bold;
-letter-spacing:2px;
 }
 
 .logo span{
 color:gold;
 }
 
-.tagline{
-font-size:13px;
-color:#aaa;
-}
-
-.info-bar{
-background:#111;
-color:gold;
-padding:10px;
+nav a{
+color:#ccc;
+margin-left:20px;
+text-decoration:none;
 font-size:14px;
 }
 
 .hero{
-padding:60px 20px;
+height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:radial-gradient(circle at center,#111,#000);
 }
 
 .hero h1{
-font-size:42px;
+font-size:50px;
 color:gold;
 margin-bottom:10px;
 }
@@ -65,75 +69,65 @@ margin-bottom:10px;
 .hero p{
 color:#bbb;
 margin-bottom:30px;
-}
-
-.buttons{
-margin-top:25px;
+max-width:500px;
 }
 
 .btn{
-display:inline-block;
-padding:16px 35px;
+padding:15px 35px;
 margin:10px;
-font-weight:bold;
 border-radius:8px;
+font-weight:bold;
 text-decoration:none;
-font-size:17px;
+display:inline-block;
 transition:.3s;
 }
 
-.btn-daftar{
-background:#ff1a1a;
-color:white;
-box-shadow:0 0 15px red;
-}
-
-.btn-login{
-background:#ffd700;
+.btn-primary{
+background:gold;
 color:black;
 box-shadow:0 0 15px gold;
 }
 
-.btn-info{
-background:#00c896;
+.btn-secondary{
+background:#ff1a1a;
 color:white;
-box-shadow:0 0 15px #00c896;
+box-shadow:0 0 15px red;
 }
 
 .btn:hover{
 transform:scale(1.08);
 }
 
-.banner{
-width:90%;
-max-width:1000px;
-margin-top:40px;
-border-radius:10px;
-box-shadow:0 0 25px gold;
-}
-
 .section{
-padding:60px 20px;
+padding:80px 20px;
+text-align:center;
 }
 
 .section h2{
 color:gold;
-margin-bottom:30px;
+margin-bottom:40px;
+font-size:30px;
 }
 
 .features{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:25px;
+gap:30px;
 }
 
 .card{
 background:#111;
-padding:25px;
-width:260px;
+padding:30px;
 border-radius:10px;
+width:260px;
 border:1px solid #222;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+border-color:gold;
 }
 
 .card h3{
@@ -141,29 +135,35 @@ color:gold;
 margin-bottom:10px;
 }
 
-.promo{
-background:#111;
-padding:40px 20px;
+.faq{
+max-width:700px;
+margin:auto;
+text-align:left;
 }
 
-.promo-box{
-margin:15px auto;
-background:#000;
-border:1px solid gold;
-padding:20px;
-border-radius:8px;
-max-width:400px;
+.faq-item{
+border-bottom:1px solid #333;
+padding:15px 0;
+cursor:pointer;
+}
+
+.faq-item h4{
+color:gold;
+}
+
+.faq-content{
+display:none;
+color:#bbb;
+padding-top:10px;
 }
 
 footer{
-background:#000;
+padding:30px;
+text-align:center;
 border-top:1px solid #222;
-padding:25px;
-font-size:13px;
 color:#777;
+font-size:13px;
 }
-
-/* popup */
 
 #popup{
 position:fixed;
@@ -175,20 +175,20 @@ padding:20px;
 border-radius:10px;
 box-shadow:0 0 20px gold;
 display:none;
-max-width:260px;
+max-width:250px;
 }
 
 .close{
-color:red;
 cursor:pointer;
-font-weight:bold;
 float:right;
+color:red;
+font-weight:bold;
 }
 
-@media(max-width:700px){
+@media(max-width:768px){
 
 .hero h1{
-font-size:30px;
+font-size:35px;
 }
 
 .features{
@@ -209,42 +209,24 @@ align-items:center;
 ROYALHOKI<span>77</span>
 </div>
 
-<div class="tagline">
-Platform Hiburan Online
-</div>
+<nav>
+<a href="#">Home</a>
+<a href="#">Promo</a>
+<a href="#">Info</a>
+</nav>
 
 </header>
 
-<div class="info-bar">
-🔥 Update informasi tersedia setiap hari 🔥
-</div>
-
 <section class="hero">
 
-<h1>SITUS ROYALHOKI77</h1>
+<h1>ROYALHOKI77</h1>
+<p>Platform hiburan online dengan komunitas aktif dan sistem stabil.</p>
 
-<p>Platform hiburan online dengan sistem stabil dan komunitas aktif.</p>
+<a href="https://royalhk77.org/beruntung27" target="_blank" class="btn btn-primary">DAFTAR</a>
 
-<div class="buttons">
-
-<a href="https://royalhk77.org/beruntung27" target="_blank" class="btn btn-daftar">
-DAFTAR
-</a>
-
-<a href="https://royalhk77.org/beruntung27" target="_blank" class="btn btn-login">
-LOGIN
-</a>
-
-<a href="https://royalhk77.org/beruntung27" target="_blank" class="btn btn-info">
-INFO
-</a>
-
-</div>
-
-<img class="banner" src="https://images.unsplash.com/photo-1596838132731-3301c3fd4317">
+<a href="https://royalhk77.org/beruntung27" target="_blank" class="btn btn-secondary">LOGIN</a>
 
 </section>
-
 
 <section class="section">
 
@@ -254,84 +236,83 @@ INFO
 
 <div class="card">
 <h3>Sistem Stabil</h3>
-<p>Platform berjalan dengan server stabil dan akses cepat.</p>
+<p>Server berjalan dengan performa tinggi dan stabil.</p>
+</div>
+
+<div class="card">
+<h3>Akses Cepat</h3>
+<p>Dapat diakses melalui berbagai perangkat mobile dan desktop.</p>
 </div>
 
 <div class="card">
 <h3>Komunitas Aktif</h3>
-<p>Ribuan pengguna aktif setiap hari.</p>
-</div>
-
-<div class="card">
-<h3>Akses 24 Jam</h3>
-<p>Dapat diakses kapan saja melalui perangkat mobile maupun desktop.</p>
+<p>Pengguna aktif setiap hari dengan aktivitas komunitas.</p>
 </div>
 
 </div>
 
 </section>
-
-
-<section class="promo">
-
-<h2>PROMO MEMBER</h2>
-
-<div class="promo-box">
-🎁 Bonus Member Baru
-</div>
-
-<div class="promo-box">
-💰 Cashback Mingguan
-</div>
-
-<div class="promo-box">
-🔥 Event & Promo Spesial
-</div>
-
-</section>
-
 
 <section class="section">
 
-<h2>PERTANYAAN UMUM</h2>
+<h2>PROMO TERBARU</h2>
+
+<div class="features">
 
 <div class="card">
-<h3>Apakah platform ini mudah diakses?</h3>
-<p>Ya, dapat diakses melalui berbagai perangkat.</p>
+<h3>Bonus Member Baru</h3>
+<p>Dapatkan promo menarik untuk pengguna baru.</p>
 </div>
 
 <div class="card">
-<h3>Apakah tersedia promo?</h3>
-<p>Tersedia berbagai promo dan event secara berkala.</p>
+<h3>Event Spesial</h3>
+<p>Promo dan event diadakan secara berkala.</p>
+</div>
+
+<div class="card">
+<h3>Reward Member</h3>
+<p>Program reward untuk pengguna aktif.</p>
+</div>
+
 </div>
 
 </section>
 
+<section class="section">
+
+<h2>FAQ</h2>
+
+<div class="faq">
+
+<div class="faq-item">
+<h4 onclick="toggleFAQ(this)">Apakah platform ini bisa diakses mobile?</h4>
+<div class="faq-content">Ya, dapat diakses melalui smartphone maupun desktop.</div>
+</div>
+
+<div class="faq-item">
+<h4 onclick="toggleFAQ(this)">Apakah tersedia promo?</h4>
+<div class="faq-content">Tersedia berbagai promo dan event secara berkala.</div>
+</div>
+
+</div>
+
+</section>
 
 <footer>
 
 © 2026 RoyalHoki77  
-Platform hiburan online
+Platform Hiburan Online
 
 </footer>
-
 
 <div id="popup">
 
 <div class="close" onclick="closePopup()">X</div>
 
-<h3 style="color:gold;">BONUS MEMBER</h3>
-
+<h3 style="color:gold;">PROMO TERBARU</h3>
 <p>Dapatkan promo menarik hari ini.</p>
 
-<br>
-
-<a href="https://royalhk77.org/beruntung27" target="_blank" class="btn btn-daftar">
-AMBIL BONUS
-</a>
-
 </div>
-
 
 <script>
 
@@ -343,8 +324,13 @@ function closePopup(){
 document.getElementById("popup").style.display="none";
 }
 
-</script>
+function toggleFAQ(el){
+let content=el.nextElementSibling;
+content.style.display=
+content.style.display==="block"?"none":"block";
+}
 
+</script>
 
 </body>
 </html>
