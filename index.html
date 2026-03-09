@@ -1,127 +1,170 @@
-
+```html
 <!DOCTYPE html>
 <html lang="id">
-<header class="hero">
 
-<div class="hero-glow"></div>
+<head>
 
-<img src="https://i.imgur.com/sXTVzds.png" class="hero-logo">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<h1 class="hero-title">
-Platform Game Online Terbesar SeAsia
-</h1>
-
-<p class="hero-sub">
-ROYALHOKI77 ~ Link Login Situs Auto Sultan Paling Cuan  
-Modal Deposit Pulsa 5000
-</p>
-
-</header>
+<title>ROYALHOKI77</title>
 
 <style>
-.hero{
 
-position:relative;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
 
-padding:80px 20px;
-
-background:linear-gradient(180deg,#02131c,#000);
-
+body{
+background:#000;
+color:white;
 text-align:center;
-
-overflow:hidden;
-
+overflow-x:hidden;
 }
 
-/* glow background */
+/* HERO */
 
-.hero-glow{
-
-position:absolute;
-
-width:600px;
-
-height:600px;
-
-background:radial-gradient(circle,#00eaff33,transparent);
-
-top:-200px;
-
-left:50%;
-
-transform:translateX(-50%);
-
-filter:blur(80px);
-
+.hero{
+padding:90px 20px;
+background:linear-gradient(#001018,#000);
+position:relative;
 }
-
-/* logo */
 
 .hero-logo{
-
 width:360px;
-
 max-width:90%;
-
-margin-bottom:25px;
-
-filter:drop-shadow(0 0 25px gold);
-
+filter:drop-shadow(0 0 20px gold);
 }
-
-/* title */
 
 .hero-title{
-
-font-size:58px;
-
-font-weight:bold;
-
+font-size:55px;
 color:#00eaff;
-
-text-shadow:
-0 0 10px #00eaff,
-0 0 20px #00eaff,
-0 0 40px #00eaff;
-
-animation:neon 2s infinite alternate;
-
+font-weight:bold;
+text-shadow:0 0 25px #00eaff;
+margin-top:20px;
 }
-
-/* neon animation */
-
-@keyframes neon{
-
-from{
-text-shadow:
-0 0 10px #00eaff,
-0 0 20px #00eaff;
-}
-
-to{
-text-shadow:
-0 0 20px #00eaff,
-0 0 40px #00eaff,
-0 0 60px #00eaff;
-}
-
-}
-
-/* subtitle */
 
 .hero-sub{
+margin-top:15px;
+color:#ccc;
+font-size:20px;
+}
 
+/* BUTTON */
+
+.btn{
+display:inline-block;
+margin:12px;
+padding:16px 35px;
+background:#00eaff;
+color:#000;
+font-weight:bold;
+border-radius:8px;
+text-decoration:none;
+box-shadow:0 0 20px #00eaff;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+/* MEMBER ONLINE */
+
+.online{
 margin-top:20px;
+font-size:20px;
+color:#00ff7f;
+}
 
-font-size:22px;
+/* JACKPOT */
 
-color:#ddd;
+.jackpot{
+margin-top:20px;
+font-size:26px;
+color:gold;
+text-shadow:0 0 15px gold;
+}
 
-line-height:1.5;
+/* SLIDER */
+
+.slider{
+width:90%;
+max-width:650px;
+margin:40px auto;
+overflow:hidden;
+border-radius:10px;
+}
+
+.slides{
+display:flex;
+width:300%;
+animation:slide 15s infinite;
+}
+
+.slides img{
+width:100%;
+}
+
+@keyframes slide{
+
+0%{margin-left:0}
+30%{margin-left:0}
+
+35%{margin-left:-100%}
+65%{margin-left:-100%}
+
+70%{margin-left:-200%}
+100%{margin-left:-200%}
 
 }
 
-/* mobile */
+/* FLOAT BUTTON */
+
+.float{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#00eaff;
+color:#000;
+padding:15px 25px;
+border-radius:40px;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 0 20px #00eaff;
+}
+
+/* NOTIF */
+
+.notif{
+position:fixed;
+left:20px;
+bottom:20px;
+background:#111;
+padding:12px;
+border-radius:8px;
+font-size:14px;
+}
+
+/* COIN */
+
+.coin{
+position:fixed;
+top:-50px;
+font-size:24px;
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+to{
+transform:translateY(110vh);
+}
+}
+
+/* MOBILE */
 
 @media(max-width:768px){
 
@@ -138,151 +181,6 @@ font-size:16px;
 }
 
 }
-  
-body{
-margin:0;
-font-family:Arial;
-background:black;
-color:white;
-text-align:center;
-overflow-x:hidden;
-}
-
-/* HEADER */
-
-header{
-padding:30px;
-}
-
-.logo{
-width:220px;
-filter:drop-shadow(0 0 15px gold);
-}
-
-.title{
-font-size:42px;
-color:#00ffff;
-font-weight:bold;
-text-shadow:0 0 20px cyan;
-}
-
-/* BUTTON */
-
-.btn{
-display:inline-block;
-margin:10px;
-padding:15px 30px;
-background:#00ffff;
-color:#000;
-font-weight:bold;
-border-radius:8px;
-text-decoration:none;
-box-shadow:0 0 15px cyan;
-transition:.3s;
-}
-
-.btn:hover{
-transform:scale(1.1);
-box-shadow:0 0 30px cyan;
-}
-
-/* SLIDER */
-
-.slider{
-width:90%;
-max-width:900px;
-margin:40px auto;
-overflow:hidden;
-border-radius:12px;
-}
-
-.slides{
-display:flex;
-width:100%;
-animation:slide 15s infinite;
-}
-
-.slides img{
-width:100%;
-flex-shrink:0;
-border-radius:12px;
-}
-
-@keyframes slide{
-
-0%{transform:translateX(0)}
-
-30%{transform:translateX(0)}
-
-33%{transform:translateX(-100%)}
-
-63%{transform:translateX(-100%)}
-
-66%{transform:translateX(-200%)}
-
-96%{transform:translateX(-200%)}
-
-100%{transform:translateX(0)}
-
-}
-
-/* MEMBER ONLINE */
-
-.online{
-margin-top:20px;
-font-size:18px;
-color:#0f0;
-}
-
-/* FLOAT BUTTON */
-
-.float{
-position:fixed;
-bottom:25px;
-right:25px;
-background:#00ffff;
-color:#000;
-padding:15px 25px;
-border-radius:40px;
-font-weight:bold;
-text-decoration:none;
-box-shadow:0 0 20px cyan;
-animation:pulse 1.5s infinite;
-}
-
-@keyframes pulse{
-0%{transform:scale(1)}
-50%{transform:scale(1.15)}
-100%{transform:scale(1)}
-}
-
-/* NOTIF MENANG */
-
-.notif{
-position:fixed;
-left:20px;
-bottom:20px;
-background:#111;
-padding:15px;
-border-radius:10px;
-font-size:14px;
-box-shadow:0 0 15px black;
-}
-
-/* COIN */
-
-.coin{
-position:fixed;
-top:-50px;
-font-size:25px;
-animation:fall linear infinite;
-}
-
-@keyframes fall{
-to{
-transform:translateY(110vh);
-}
-}
 
 </style>
 
@@ -290,46 +188,61 @@ transform:translateY(110vh);
 
 <body>
 
+<header class="hero">
+
+<img src="https://i.imgur.com/sXTVzds.png" class="hero-logo">
+
+<div class="hero-title">
+Platform Game Online Terbesar SeAsia
+</div>
+
+<div class="hero-sub">
+ROYALHOKI77 ~ Link Login Situs Auto Sultan Modal Deposit Pulsa 5000
+</div>
 
 <div>
 
 <a href="https://heylink.me/Royalhoki77link/" class="btn">DAFTAR</a>
+
 <a href="https://heylink.me/Royalhoki77link/" class="btn">LOGIN</a>
+
 <a href="https://heylink.me/Royalhoki77link/" class="btn">LIVE CHAT</a>
 
 </div>
-
 
 <div class="online">
 Member Online : <span id="online"></span>
 </div>
 
+<div class="jackpot">
+TOTAL JACKPOT : Rp <span id="jackpot"></span>
+</div>
+
+</header>
 
 <div class="slider">
 
 <div class="slides">
 
 <img src="https://i.imgur.com/0WdweNC.png">
-<img src="https://i.imgur.com/kFsKsA8.png">
+
+<img src="https://i.imgur.com/HuiFGAZ.png">
+
 <img src="https://i.imgur.com/2hif2V3.png">
 
 </div>
 
 </div>
 
-
-<footer style="margin-top:40px;padding:20px;color:#888;">
+<footer style="margin-top:40px;color:#777;padding:20px;">
 © 2026 ROYALHOKI77
 </footer>
-
 
 <a href="https://heylink.me/Royalhoki77link/" class="float">
 DAFTAR SEKARANG
 </a>
 
-
 <div class="notif" id="notif"></div>
-
 
 <script>
 
@@ -337,19 +250,36 @@ DAFTAR SEKARANG
 
 function online(){
 document.getElementById("online").innerHTML =
-Math.floor(Math.random()*2000)+300;
+Math.floor(Math.random()*1500)+300;
 }
 
 setInterval(online,2000);
 online();
 
+/* JACKPOT */
+
+let jp=238912340;
+
+function jackpot(){
+
+jp += Math.floor(Math.random()*5000);
+
+document.getElementById("jackpot").innerHTML =
+jp.toLocaleString();
+
+}
+
+setInterval(jackpot,1500);
+jackpot();
+
 /* NOTIF MENANG */
 
-const nama=["Andi","Budi","Rian","Agus","Joko","Rizky","Dimas","Fajar"];
+const nama=["Rian","Budi","Agus","Joko","Dimas","Rizky","Andi"];
 
 function notif(){
 
 let n = nama[Math.floor(Math.random()*nama.length)];
+
 let uang = Math.floor(Math.random()*9000000)+1000000;
 
 document.getElementById("notif").innerHTML =
@@ -360,11 +290,11 @@ n+" menang Rp "+uang.toLocaleString();
 setInterval(notif,4000);
 notif();
 
-/* COIN JATUH */
+/* COIN */
 
 function coin(){
 
-let c = document.createElement("div");
+let c=document.createElement("div");
 
 c.className="coin";
 
