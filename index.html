@@ -1,15 +1,144 @@
 
 <!DOCTYPE html>
 <html lang="id">
-<head>
+<header class="hero">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="hero-glow"></div>
 
-<title>ROYALHOKI77 - Situs Game Online Auto Sultan</title>
+<img src="https://i.imgur.com/sXTVzds.png" class="hero-logo">
+
+<h1 class="hero-title">
+Platform Game Online Terbesar SeAsia
+</h1>
+
+<p class="hero-sub">
+ROYALHOKI77 ~ Link Login Situs Auto Sultan Paling Cuan  
+Modal Deposit Pulsa 5000
+</p>
+
+</header>
 
 <style>
+.hero{
 
+position:relative;
+
+padding:80px 20px;
+
+background:linear-gradient(180deg,#02131c,#000);
+
+text-align:center;
+
+overflow:hidden;
+
+}
+
+/* glow background */
+
+.hero-glow{
+
+position:absolute;
+
+width:600px;
+
+height:600px;
+
+background:radial-gradient(circle,#00eaff33,transparent);
+
+top:-200px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+filter:blur(80px);
+
+}
+
+/* logo */
+
+.hero-logo{
+
+width:360px;
+
+max-width:90%;
+
+margin-bottom:25px;
+
+filter:drop-shadow(0 0 25px gold);
+
+}
+
+/* title */
+
+.hero-title{
+
+font-size:58px;
+
+font-weight:bold;
+
+color:#00eaff;
+
+text-shadow:
+0 0 10px #00eaff,
+0 0 20px #00eaff,
+0 0 40px #00eaff;
+
+animation:neon 2s infinite alternate;
+
+}
+
+/* neon animation */
+
+@keyframes neon{
+
+from{
+text-shadow:
+0 0 10px #00eaff,
+0 0 20px #00eaff;
+}
+
+to{
+text-shadow:
+0 0 20px #00eaff,
+0 0 40px #00eaff,
+0 0 60px #00eaff;
+}
+
+}
+
+/* subtitle */
+
+.hero-sub{
+
+margin-top:20px;
+
+font-size:22px;
+
+color:#ddd;
+
+line-height:1.5;
+
+}
+
+/* mobile */
+
+@media(max-width:768px){
+
+.hero-title{
+font-size:34px;
+}
+
+.hero-logo{
+width:260px;
+}
+
+.hero-sub{
+font-size:16px;
+}
+
+}
+  
 body{
 margin:0;
 font-family:Arial;
