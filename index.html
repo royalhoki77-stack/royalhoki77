@@ -93,32 +93,39 @@ text-shadow:0 0 15px gold;
 
 .slider{
 width:90%;
-max-width:650px;
+max-width:900px;
 margin:40px auto;
 overflow:hidden;
-border-radius:10px;
+border-radius:12px;
 }
 
 .slides{
 display:flex;
-width:300%;
+width:100%;
 animation:slide 15s infinite;
 }
 
 .slides img{
 width:100%;
+flex-shrink:0;
+border-radius:12px;
 }
 
 @keyframes slide{
 
-0%{margin-left:0}
-30%{margin-left:0}
+0%{transform:translateX(0)}
 
-35%{margin-left:-100%}
-65%{margin-left:-100%}
+30%{transform:translateX(0)}
 
-70%{margin-left:-200%}
-100%{margin-left:-200%}
+33%{transform:translateX(-100%)}
+
+63%{transform:translateX(-100%)}
+
+66%{transform:translateX(-200%)}
+
+96%{transform:translateX(-200%)}
+
+100%{transform:translateX(0)}
 
 }
 
