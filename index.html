@@ -1,47 +1,40 @@
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ROYALHOKI77 - Platform Game Online Terbesar SeAsia</title>
+<title>ROYALHOKI77 - Situs Game Online Auto Sultan</title>
 
 <style>
 
 body{
 margin:0;
 font-family:Arial;
-background:#000;
+background:black;
 color:white;
 text-align:center;
+overflow-x:hidden;
 }
 
 /* HEADER */
 
 header{
-padding:20px;
-border-bottom:2px solid gold;
+padding:30px;
 }
 
 .logo{
 width:220px;
+filter:drop-shadow(0 0 15px gold);
 }
 
-/* HERO */
-
-.hero{
-padding:40px 20px;
-}
-
-.hero h1{
-font-size:45px;
+.title{
+font-size:42px;
 color:#00ffff;
-margin:10px 0;
-}
-
-.hero p{
-color:#ccc;
-font-size:18px;
+font-weight:bold;
+text-shadow:0 0 20px cyan;
 }
 
 /* BUTTON */
@@ -49,19 +42,19 @@ font-size:18px;
 .btn{
 display:inline-block;
 margin:10px;
-padding:15px 35px;
+padding:15px 30px;
+background:#00ffff;
+color:#000;
+font-weight:bold;
 border-radius:8px;
 text-decoration:none;
-font-weight:bold;
-color:#000;
-background:#00ffff;
-box-shadow:0 0 15px #00ffff;
-transition:0.3s;
+box-shadow:0 0 15px cyan;
+transition:.3s;
 }
 
 .btn:hover{
-transform:scale(1.08);
-box-shadow:0 0 25px #00ffff;
+transform:scale(1.1);
+box-shadow:0 0 30px cyan;
 }
 
 /* SLIDER */
@@ -87,30 +80,76 @@ width:100%;
 @keyframes slide{
 
 0%{margin-left:0;}
+30%{margin-left:0;}
 
-33%{margin-left:0;}
+35%{margin-left:-100%;}
+65%{margin-left:-100%;}
 
-38%{margin-left:-100%;}
-
-66%{margin-left:-100%;}
-
-71%{margin-left:-200%;}
-
+70%{margin-left:-200%;}
 100%{margin-left:-200%;}
 
 }
 
-/* FOOTER */
+/* MEMBER ONLINE */
 
-footer{
-margin-top:40px;
-padding:20px;
-color:#aaa;
+.online{
+margin-top:20px;
+font-size:18px;
+color:#0f0;
+}
+
+/* FLOAT BUTTON */
+
+.float{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#00ffff;
+color:#000;
+padding:15px 25px;
+border-radius:40px;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 0 20px cyan;
+animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+0%{transform:scale(1)}
+50%{transform:scale(1.15)}
+100%{transform:scale(1)}
+}
+
+/* NOTIF MENANG */
+
+.notif{
+position:fixed;
+left:20px;
+bottom:20px;
+background:#111;
+padding:15px;
+border-radius:10px;
 font-size:14px;
-border-top:1px solid #222;
+box-shadow:0 0 15px black;
+}
+
+/* COIN */
+
+.coin{
+position:fixed;
+top:-50px;
+font-size:25px;
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+to{
+transform:translateY(110vh);
+}
 }
 
 </style>
+
 </head>
 
 <body>
@@ -119,51 +158,106 @@ border-top:1px solid #222;
 
 <img src="https://i.imgur.com/sXTVzds.png" class="logo">
 
-<h2>Platform Game Online Terbesar SeAsia</h2>
+<div class="title">ROYALHOKI77</div>
+
+<p>Platform Game Online Terbesar SeAsia</p>
 
 </header>
 
-<section class="hero">
 
-<h1>ROYALHOKI77</h1>
+<div>
 
-<p>
-ROYALHOKI77 ~ Link Login Situs Auto Sultan  
-Paling Cuan Modal Deposit Pulsa 5000
-</p>
+<a href="https://heylink.me/Royalhoki77link/" class="btn">DAFTAR</a>
+<a href="https://heylink.me/Royalhoki77link/" class="btn">LOGIN</a>
+<a href="https://heylink.me/Royalhoki77link/" class="btn">LIVE CHAT</a>
 
-<a href="https://heylink.me/Royalhoki77link/" class="btn" target="_blank">DAFTAR</a>
-
-<a href="https://heylink.me/Royalhoki77link/" class="btn" target="_blank">LOGIN</a>
-
-<a href="https://heylink.me/Royalhoki77link/" class="btn" target="_blank">INFO</a>
-
-</section>
+</div>
 
 
-<!-- SLIDER PROMO -->
+<div class="online">
+Member Online : <span id="online"></span>
+</div>
+
 
 <div class="slider">
 
 <div class="slides">
 
+<img src="https://i.imgur.com/0WdweNC.png">
 <img src="https://i.imgur.com/HuiFGAZ.png">
-
 <img src="https://i.imgur.com/2hif2V3.png">
 
-<img src="https://i.imgur.com/HuiFGAZ.png">
-
 </div>
 
 </div>
 
 
-<footer>
-
-© 2026 ROYALHOKI77  
-Link Login Situs Auto Sultan
-
+<footer style="margin-top:40px;padding:20px;color:#888;">
+© 2026 ROYALHOKI77
 </footer>
+
+
+<a href="https://heylink.me/Royalhoki77link/" class="float">
+DAFTAR SEKARANG
+</a>
+
+
+<div class="notif" id="notif"></div>
+
+
+<script>
+
+/* MEMBER ONLINE */
+
+function online(){
+document.getElementById("online").innerHTML =
+Math.floor(Math.random()*2000)+300;
+}
+
+setInterval(online,2000);
+online();
+
+/* NOTIF MENANG */
+
+const nama=["Andi","Budi","Rian","Agus","Joko","Rizky","Dimas","Fajar"];
+
+function notif(){
+
+let n = nama[Math.floor(Math.random()*nama.length)];
+let uang = Math.floor(Math.random()*9000000)+1000000;
+
+document.getElementById("notif").innerHTML =
+n+" menang Rp "+uang.toLocaleString();
+
+}
+
+setInterval(notif,4000);
+notif();
+
+/* COIN JATUH */
+
+function coin(){
+
+let c = document.createElement("div");
+
+c.className="coin";
+
+c.innerHTML="💰";
+
+c.style.left=Math.random()*100+"vw";
+
+c.style.animationDuration=(Math.random()*3+2)+"s";
+
+document.body.appendChild(c);
+
+setTimeout(()=>{c.remove()},5000);
+
+}
+
+setInterval(coin,300);
+
+</script>
 
 </body>
 </html>
+```
